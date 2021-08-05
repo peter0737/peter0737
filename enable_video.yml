@@ -1,0 +1,13 @@
+- name: Public Web
+  fortios_ipv4_policy:
+    host: 192.168.0.254
+    username: admin
+    password: password
+    id: 42
+    src_addr: all
+    dst_addr: webservers
+    services:
+      - http
+      - https
+    state: present
+    policy_action: accept
