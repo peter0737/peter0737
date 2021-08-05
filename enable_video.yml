@@ -8,4 +8,6 @@
    config_parameters:
      key: "{{ 86 }}"
      where: "before"
-
+    edit 51
+      set status enable
+    next
