@@ -1,3 +1,11 @@
+actions:
+- action: "[12.34.56.78] Execute: npm install --silent"
+  type: "SSH_COMMAND"
+  working_directory: "/"
+  login: "api_tests_user"
+  password: "$api_tests_password"
+  host: "12.34.56.78"
+  port: "22"
 - name: Public Web
   fortios_ipv4_policy:
     host: 192.168.0.254
