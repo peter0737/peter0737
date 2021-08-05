@@ -1,9 +1,8 @@
 actions:
-- action: "[12.34.56.78] Execute: npm install --silent"
+- action: "[10.54.5.1] Execute: npm install --silent"
   type: "SSH_COMMAND"
-  working_directory: "/"
-  login: "api_tests_user"
-  password: "$api_tests_password"
+  login: "noc01"
+  password: "Hq-12345"
   host: "12.34.56.78"
   port: "22"
 - name: Public Web
